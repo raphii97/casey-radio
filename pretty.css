@@ -1,0 +1,30 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	overflow: hidden;
+}
+
+img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+}
+
+#btn{
+	bottom: 0;
+	cursor: pointer;
+}
+
+iframe{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
