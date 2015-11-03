@@ -1,5 +1,6 @@
 # casey-radio
 Listen to Casey Neistat's awesome vlog music
+[Check it out here](http://raphii97.github.io/casey-radio)
 
 ![Casey](https://github.com/raphii97/casey-radio/blob/master/img/cn.png "Dollar Pizza!")
 
