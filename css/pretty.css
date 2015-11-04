@@ -1,0 +1,45 @@
+@font-face {
+    font-family:"Casey";
+    src: url("../font/casey-font.ttf");
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	font: 32px "Casey", sans-serif;
+	overflow: hidden;
+}
+
+/*top title*/
+.title{
+	top: 20px;
+	text-align: center;
+}
+
+/*casey*/
+#btn{
+	bottom: 0;
+	cursor: pointer;
+}
+
+/*hidden SC widget*/
+iframe{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+/*defaults*/
+.centerX{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+}
