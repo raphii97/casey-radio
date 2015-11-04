@@ -4,9 +4,9 @@ Listen to Casey Neistat's awesome vlog music:
 
 ![Casey](https://github.com/raphii97/casey-radio/blob/master/img/casey.png "Dollar Pizza!")
 
-##Using SoundCloud's API
+##SoundCloud API
 ```
-api.js
+js/api.js
 ```
 [Documentation](https://developers.soundcloud.com/docs/api/html5-widget)
 
