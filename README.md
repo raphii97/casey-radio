@@ -14,5 +14,6 @@ js/api.js
 [Soundcloud Playlist](https://soundcloud.com/sondre-foslien/sets/casey-niestat)
 
 ##Todo
+* make it work for touchscreens
 * minimalist loading screen
 * fancy stuff when song is playing
