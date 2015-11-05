@@ -3,6 +3,7 @@ var ui = {};
 ui.btn = document.getElementById('btn');
 ui.title = document.getElementById('title');
 ui.loading = document.getElementById('loading');
+ui.paused = true;
 
 
 
@@ -45,9 +46,8 @@ sc.player.bind(SC.Widget.Events.FINISH, function(){
 
 //toggle pause or play random song
 ui.click = function(){
-	sc.player.isPaused(function(paused){
-		paused? sc.play_random() : sc.player.pause();
-	});
+	ui.paused? sc.play_random() : sc.player.pause();
+	ui.paused = !ui.paused;
 };
 
 
