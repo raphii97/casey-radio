@@ -15,5 +15,4 @@ js/api.js
 
 ##Todo
 * make it work for touchscreens
-* minimalist loading screen
 * fancy stuff when song is playing

@@ -2,6 +2,7 @@
 var ui = {};
 ui.btn = document.getElementById('btn');
 ui.title = document.getElementById('title');
+ui.loading = document.getElementById('loading');
 
 
 
@@ -13,10 +14,14 @@ sc.iframe = document.querySelector("iframe");
 sc.player = SC.Widget(sc.iframe);
 
 
-//get number of songs
+//when widget is ready
 sc.player.bind(SC.Widget.Events.READY, function(){
 	sc.player.getSounds(function(songs){
+		//get number of songs
 		sc.songs = songs.length;
+
+		//remove loading screen
+		loading.className = "remove"
 	});
 });
 
@@ -48,4 +53,7 @@ ui.click = function(){
 
 //event listeners for clicking on casey
 ui.btn.addEventListener("click", ui.click);
-ui.btn.addEventListener("touchstart", ui.click);
+ui.btn.addEventListener("touchstart", function(e){
+	e.preventDefault();
+	ui.click();
+});
