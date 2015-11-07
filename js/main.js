@@ -53,7 +53,3 @@ ui.click = function(){
 
 //event listeners for clicking on casey
 ui.btn.addEventListener("click", ui.click);
-ui.btn.addEventListener("touchstart", function(e){
-	e.preventDefault();
-	ui.click();
-});
